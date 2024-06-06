@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Semester Exam Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>End Semester Exam Registration</h1>
+        <form>
+            <div class="form-group">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>Select Department</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="eee">Electrical Engineering</option>
+                    <option value="mech">Mechanical Engineering</option>
+                    <option value="civil">Civil Engineering</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="courses">Select Courses:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="courses" value="math101"> Math 101</label>
+                    <label><input type="checkbox" name="courses" value="cs102"> CS 102</label>
+                    <label><input type="checkbox" name="courses" value="phy103"> Physics 103</label>
+                    <label><input type="checkbox" name="courses" value="chem104"> Chemistry 104</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exam-date">Preferred Exam Date:</label>
+                <input type="date" id="exam-date" name="exam-date" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
